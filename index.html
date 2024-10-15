@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Lucas Paim's Professional Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Lucas Paim's professional page showcasing expertise in AI and iOS development.">
+    <meta name="keywords" content="Lucas Paim, AI Engineer, iOS Developer, Machine Learning, Artificial Intelligence">
+    <!-- Bulma CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar has-background-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item has-text-white" href="#">
+                <strong>Lucas Paim</strong>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item has-text-white" href="#about">About Me</a>
+                <a class="navbar-item has-text-white" href="#expertise">Expertise</a>
+                <a class="navbar-item has-text-white" href="#projects">Projects</a>
+                <a class="navbar-item has-text-white" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Profile Section -->
+            <div class="content has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                    <img class="is-rounded" src="images/profile.jpg" alt="Profile Picture">
+                </figure>
+                <h1 class="title">Welcome to My Professional Page</h1>
+                <p class="subtitle">AI Engineer and iOS Developer</p>
+            </div>
+
+            <hr>
+
+            <!-- About Me Section -->
+            <section id="about" class="content">
+                <h2 class="title is-3">About Me</h2>
+                <p>
+                    Welcome to my professional page! I'm <strong>Lucas Paim</strong>, a dedicated professional specializing in <strong>Artificial Intelligence (AI)</strong> and <strong>iOS Development</strong>. My passion lies in creating innovative solutions that merge cutting-edge AI technologies with seamless mobile experiences.
+                </p>
+            </section>
+
+            <hr>
+
+            <!-- Professional Expertise Section -->
+            <section id="expertise" class="content">
+                <h2 class="title is-3">Professional Expertise</h2>
+
+                <h3 class="title is-4">🧠 Artificial Intelligence & Machine Learning</h3>
+                <ul>
+                    <li><strong>Deep Learning & Neural Networks</strong> - Expertise in TensorFlow, PyTorch, and Keras.</li>
+                    <li><strong>Computer Vision</strong> - Developed image recognition systems and visual search applications.</li>
+                    <li><strong>Natural Language Processing</strong> - Built chatbots and language models for customer engagement.</li>
+                    <li><strong>Audio Processing</strong> - Built a music transcription model </li>
+                </ul>
+
+                <h3 class="title is-4">📱 iOS Development</h3>
+                <ul>
+                    <li><strong>Swift & Objective-C</strong> - Proficient in building native iOS applications.</li>
+                    <li><strong>UI/UX Design</strong> - Focus on intuitive user interfaces using SwiftUI and UIKit.</li>
+                    <li><strong>App Optimization</strong> - Implemented performance enhancements and memory management techniques.</li>
+                </ul>
+
+                <h3 class="title is-4">☁️ Cloud Integration</h3>
+                <ul>
+                    <li><strong>AWS & Firebase</strong> - Deployed scalable backend services for mobile applications.</li>
+                    <li><strong>API Development</strong> - Created RESTful APIs for data exchange between client and server.</li>
+                </ul>
+            </section>
+
+
+            <hr>
+
+            <!-- Open Source Contributions Section -->
+            <section id="contributions" class="content">
+                <h2 class="title is-3">Open Source Contributions</h2>
+                <ul>
+                    <li><strong>Contributed to Magenta Group (Google's research group)</strong> - Add a capability to use transfer learning for automatic music transcription.</li>
+                    <li><strong>Swift Community Projects</strong> - Actively participate in open-source Swift libraries.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content">
+                <h2 class="title is-3">Contact Me</h2>
+                <p>I'm always excited to connect with others in the tech community. Feel free to reach out!</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:lucasmpaim1@gmail.com">lucasmpaim1@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucas-paim/" target="_blank">linkedin.com/in/lucas-paim</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/lucasmpaim" target="_blank">github.com/lucasmpaim</a></li>
+                    <li><strong>Medium:</strong> <a href="https://medium.com/@lucasmrowskovskypaim" target="_blank">medium.com/@lucasmrowskovskypaim</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Lucas Paim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bulma and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Navbar Burger Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+    
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+    
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+    
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+    
+                    });
+                });
+            }
+        });
+    </script>
+
+    <script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        });
+    </script>
+</body>
+</html>

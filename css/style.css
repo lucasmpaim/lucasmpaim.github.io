@@ -1,0 +1,29 @@
+/* css/style.css */
+
+/* Custom font (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    border-bottom: solid 1px #ccc;
+}
+
+.navbar-item:hover {
+    background-color: #4a4a4a;
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+h1.title, h2.title, h3.title {
+    color: #363636;
+}
+
+.footer {
+    padding: 2rem 1.5rem 2rem;
+}
